@@ -26,12 +26,11 @@ public class PRINCIPAL : MonoBehaviour
         AY = FILTRO.y;
         AZ = FILTRO.z;
 
-        T1.text = (AX * Mathf.Rad2Deg).ToString();
-        T2.text = AX.ToString();
-        T3.text = AX.ToString();
-
+        T1.text = "X: " + (AX * Mathf.Rad2Deg).ToString();
+        T2.text = "Y: " + (AY * Mathf.Rad2Deg).ToString();
+        T3.text = "Z: " + (AZ * Mathf.Rad2Deg).ToString();
         CUBO.transform.localEulerAngles = new Vector3(AX* Mathf.Rad2Deg, AY * Mathf.Rad2Deg, AZ * Mathf.Rad2Deg);
-        //CUBO.transform.localEulerAngles = new Vector3(0f, AY * Mathf.Rad2Deg, AX * Mathf.Rad2Deg);
+        //CUBO.transform.localEulerAngles = new Vector3(AX * Mathf.Rad2Deg, AY * Mathf.Rad2Deg, 0f);
     }
 }
 
